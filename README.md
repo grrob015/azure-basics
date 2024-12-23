@@ -69,6 +69,15 @@ I recommend waiting until the machine fully deploys and then a couple extra minu
 
 ## The Second Virtual Machine
 
+If you've been following along so far and have already created a Windows VM, it's time to make the Ubuntu one now. The basics settings should be the same except for two things: **You will not need to provide licensing** and you will need to have **password authentication instead of an ssh key**. SSH port 22 should already be allowed by default.
+
+![15  ubuntu settings](https://github.com/user-attachments/assets/ff248f73-3b8d-4553-abc6-8ac61b792811)
+
+If you're able to select the existing virtual network you created with the first VM, congratualtions! All of the setup for the next tutorial is finished. Create and deploy your next VM and head to the next github page to inspect network traffic and manage network security groups with me!
+
+![16  virutal network registered](https://github.com/user-attachments/assets/573621f5-a454-4c6b-a59c-6c074a9ee9cb)
+
+link to next part will have image
 
 
 
