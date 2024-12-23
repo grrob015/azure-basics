@@ -77,7 +77,7 @@ If you're able to select the existing virtual network you created with the first
 
 ![16  virutal network registered](https://github.com/user-attachments/assets/573621f5-a454-4c6b-a59c-6c074a9ee9cb)
 
-link to next part will have image
+Continue to part 2 where we connect to and observe network traffic between our VMs [here](https://github.com/grrob015/azure-basics-2/tree/main).
 
 
 
