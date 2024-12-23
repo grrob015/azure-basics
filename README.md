@@ -47,3 +47,31 @@ Then, download the file and view the original and the updated version side by si
 <!-- The first tutorial was somewhat long winded, but I wanted to explain everything that an adept beginner might need a visual reference for. For brevity's sake, I won't explain things twice, and will instead point to certain parts in my tutorial and use less/smaller photos as hopefully a familiarity with the Azure UI is beginning to develop. --> 
 # Virtual Machines
 
+**Virtual machines are simulated computers that are running inside of another computer**, and Microsoft Azure allows us to create, access, and modify them with a plethora of options and settings. In this part of the tutorial, I will show you how to create two virtual machines running on the same virtual network so that we can inspect network traffic between them. To begin, a virtual machine is a resource like any other in Azure and must be created inside of a resource group. I will be using the same resource group that contains my storage account. Navigate to your preferred resource group of choice and create a virtual machine. The marketplace product at the time of this tutorial looks like this:
+
+![11  the virtual machine icon](https://github.com/user-attachments/assets/8077f7c6-3ed8-417a-8f6b-df2e39178538)
+
+## Virtual Machine Creation Options
+
+The virtual machine options are much more complex than the ones for our storage account. To begin, start in the **Basics** menu and make sure that the virtual machine is attached to the subscription you want, in the resource group you want. Name it something that describes it so you can easily know what it is in the Azure interface, and choose the availability option that best suits your needs and budget. Then, select a disk image to choose the kind of operating system that you want. We will be creating a Windows 10 and an Ubuntu VM, and the order does not matter (⚠️ **When creating the Windows VM**, make sure to check the "Licensing" option at the bottom. It won't create if you dont'!).
+
+![12  basic vm options](https://github.com/user-attachments/assets/3a560925-b550-4e36-b2ba-1af8037cd0ad)
+
+Next, select the resources you'd like to allocate to the virtual machine with the "Size" option, and select a username and password to be able to log into it. If you need, feel free to put it in a notepad or write it down so you don't forget. For the inbound port rules, I will only be demonstrating remote desktop (RDP 3389) on Windows 10, but will SSH into the Ubuntu VM from both my virtual machine with a private IP address, and my home machine with a public one, so I will need to enable **SSH (22)** in my Ubuntu VM.
+
+![13  basic vm options 2](https://github.com/user-attachments/assets/4dc8b0b0-77b4-4ef2-9c8f-82463e5a8c72)
+
+The default disk options are more than adequate for our purposes, but we will go to the "Networking" menu to create a virtual network and ensure that both machines are running on it. We will simply click "create new" under "Virtual Network" and rename it to something descriptive. For the first VM, no other options need to be changed for our purposes and we can click "Review + create" at the bottom of the screen to start the deployment process.
+
+![14  the new virtual network](https://github.com/user-attachments/assets/46d3d47b-0f82-49ff-8541-74f5c46365db)
+
+I recommend waiting until the machine fully deploys and then a couple extra minutes after that to make sure that Azure will register everything properly when you create the second VM. If you go too quickly, Azure won't register that you have an existing virtual network and you won't be able to select it. Once that's done, though, you're ready to create the second virtual machine!
+
+## The Second Virtual Machine
+
+
+
+
+
+
+
