@@ -1,6 +1,15 @@
 # azure-basics
 Data Storage, Virtual Machines, NSGs (Network Security Groups), and Internet Protocols.
 
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+
+<h2>Operating Systems Used </h2>
+
+- Windows 10</b> (21H2)
+
 ## Resource Group Creation
 Everything in Microsoft Azure must be contained within a resource group, and they're a good way to organize projects, networks, and more. So let's begin by creating a resource group that everything in this repository's demonstration will live inside of. As a minimum requirement, you must choose the subscription, the name of the resource group, and the Microsoft servers it will be hosted on. Optional tags can also be added to oragnize large groups of resource groups.
 
